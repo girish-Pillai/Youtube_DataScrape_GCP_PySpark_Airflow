@@ -15,6 +15,11 @@ Cluster Configuration: Configuration settings for the Dataproc cluster are estab
 ## Tasks in the DAG:
 
 create_cluster: Task to create a Dataproc cluster leveraging DataprocCreateClusterOperator.
+
 pyspark_task: Task for submitting a PySpark job to the created cluster via DataprocSubmitJobOperator.
+
 delete_cluster: Task to delete the Dataproc cluster after job completion using DataprocDeleteClusterOperator.
-Task Dependencies: Task dependencies are set up to ensure sequential execution. The create_cluster task is initiated first, followed by pyspark_task, and finally delete_cluster, utilizing the >> operator.
+
+Task Dependencies: Task dependencies are set up to ensure sequential execution. 
+
+The create_cluster task is initiated first, followed by pyspark_task, and finally delete_cluster, utilizing the >> operator.
