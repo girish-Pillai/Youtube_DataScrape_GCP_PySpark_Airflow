@@ -1,4 +1,4 @@
-### A Simple Spark Project to fetch Data using Youtube API Using PySpark and create a tables in Google Cloud Storage using Airflow and Google Cloud Dataproc
+### A Spark Project to fetch Data using Youtube API Using PySpark and create a tables in Google Cloud Storage using Airflow and Google Cloud Dataproc
 
 This project showcases the workflow for fetching data from the YouTube API, performing transformations via PySpark, and storing the processed data in Google Cloud Storage in Parquet format.
 
